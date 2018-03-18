@@ -5,6 +5,11 @@ sys.argv获取命令传入的参数
 python bmap.py test.csv target.csv SCTnixYv4j2bQNnwZTD07as3VsiG2er8
 python bmap.py bmap_test_nb_1.csv bmap_target_nb_1.csv SCTnixYv4j2bQNnwZTD07as3VsiG2er8
 python bmap.py bmap_test_huzhou.csv bmap_target_huzhou.csv SCTnixYv4j2bQNnwZTD07as3VsiG2er8
+python bmap.py bmap_test_hangzhou.csv bmap_target_hangzhou.csv SCTnixYv4j2bQNnwZTD07as3VsiG2er8
+python bmap.py bmap_test_shaoxing.csv bmap_target_shaoxing.csv SCTnixYv4j2bQNnwZTD07as3VsiG2er8
+python bmap.py bmap_test_quzhou.csv bmap_target_quzhou.csv SCTnixYv4j2bQNnwZTD07as3VsiG2er8
+python bmap.py bmap_test_tz_ls_zs.csv bmap_target_tz_ls_zs.csv SCTnixYv4j2bQNnwZTD07as3VsiG2er8
+bmap_test_tz_ls_zs.csv
 """
 
 import sys
