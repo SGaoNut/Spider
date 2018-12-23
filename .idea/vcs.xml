@@ -2,12 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/QichachaDataCrawl" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/qichacha" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/qichacha-weixin" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/qichachaSpider" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/tianyancha/Python-Tianyancha" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/tianyancha/Tianyancha" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/tianyancha/tianyacha" vcs="Git" />
   </component>
 </project>
