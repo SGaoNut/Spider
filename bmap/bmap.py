@@ -38,7 +38,7 @@ def geoCoding(filename, ak):
             grid_id = spline[0]
             city = spline[1]
             address = spline[2]
-            address = re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）]+".decode("utf8"), "".decode("utf8"), address)
+            address = re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）]+", "", address)
             # address = spline[2].replace('\r\n', '').replace('\n', '').replace('-', '')
 
             url = "http://api.map.baidu.com/geocoder/v2/?address=" + \
