@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
 import codecs
 
-def writeFile(toFile, content):
+
+def write_file(toFile, content):
     try:
         fo = codecs.open(toFile, 'wb', "utf-8")
         print(u"文件名：", toFile)

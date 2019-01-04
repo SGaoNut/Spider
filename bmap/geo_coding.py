@@ -1,11 +1,13 @@
+# -*- coding: utf-8 -*-
 import codecs
 import re
 import requests
 import json
 
-def geoCoding(filename, ak):
+
+# 写入文件内容（数组会使用writelines进行写入）codec.open实现
+def geo_coding(filename, ak):
     content = ""
-# @see 写入文件内容（数组会使用writelines进行写入）codec.open实现
     try:
         fo = codecs.open(filename, 'r', "utf-8")
         print(u"读取文件名：", filename)
@@ -14,9 +16,9 @@ def geoCoding(filename, ak):
             grid_id = spline[0]
             city = spline[1]
             address = spline[2]
-            address = re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）]+", "",address)
+            address = re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）]+", "", address)
 
-# 调用百度地图正 / 逆地理编码服务API
+            # 调用百度地图正 / 逆地理编码服务API
             url = "http://api.map.baidu.com/geocoder/v2/?address=" + \
                   address + "&city=" + city + "&output=json&ak=" + ak + "&callback=showLocation"
             geo_content = requests.get(url).content.decode('utf-8')
