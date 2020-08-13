@@ -8,3 +8,4 @@ html = urlopen("https://morvanzhou.github.io/static/scraping/table.html").read()
 soup = BeautifulSoup(html, features='html.parser')
 
 img_links = soup.find_all("img", {"src":re.compile('.*?\.jpg')})
+
