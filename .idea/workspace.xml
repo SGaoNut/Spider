@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="921d27e7-7714-48cb-ae4b-199135e36007" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcmap_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/tcmap_spider.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597564722560</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="20200816 find city list">
+      <created>1597583917518</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597583917518</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,10 +290,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="-309" y="526" key="#xdebugger.XInspectDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597201113077" />
-    <state x="376" y="226" key="CommitChangelistDialog2" timestamp="1597564722359">
+    <state x="376" y="226" key="CommitChangelistDialog2" timestamp="1597583917373">
       <screen x="0" y="23" width="1920" height="1141" />
     </state>
-    <state x="376" y="226" key="CommitChangelistDialog2/0.23.1920.1141@0.23.1920.1141" timestamp="1597564722359" />
+    <state x="376" y="226" key="CommitChangelistDialog2/0.23.1920.1141@0.23.1920.1141" timestamp="1597583917373" />
     <state width="1358" height="342" key="GridCell.Tab.0.bottom" timestamp="1597564938654">
       <screen x="0" y="23" width="1920" height="1141" />
     </state>
@@ -328,11 +334,11 @@
     </state>
     <state width="1877" height="305" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597396638422" />
     <state width="1358" height="342" key="GridCell.Tab.1.right/0.23.1920.1141@0.23.1920.1141" timestamp="1597564938655" />
-    <state x="859" y="351" key="Vcs.Push.Dialog.v2" timestamp="1597564724537">
+    <state x="859" y="351" key="Vcs.Push.Dialog.v2" timestamp="1597583919442">
       <screen x="0" y="23" width="1920" height="1141" />
     </state>
     <state x="859" y="302" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597288162982" />
-    <state x="859" y="351" key="Vcs.Push.Dialog.v2/0.23.1920.1141@0.23.1920.1141" timestamp="1597564724537" />
+    <state x="859" y="351" key="Vcs.Push.Dialog.v2/0.23.1920.1141@0.23.1920.1141" timestamp="1597583919442" />
     <state x="893" y="311" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1596814645359" />
     <state width="487" height="574" key="XDebugger.FullValuePopup" timestamp="1597570992194">
       <screen x="0" y="23" width="1920" height="1141" />
