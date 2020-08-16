@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="921d27e7-7714-48cb-ae4b-199135e36007" name="Default Changelist" comment="20200813 commit code">
-      <change beforePath="$PROJECT_DIR$/.idea/Spider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Spider.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="921d27e7-7714-48cb-ae4b-199135e36007" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tcmap_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/tcmap_spider.py" afterDir="false" />
     </list>
@@ -178,9 +176,6 @@
       <module name="Spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -244,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597288159451</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="20200816 find city list">
+      <created>1597564722559</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597564722560</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +268,8 @@
     <MESSAGE value="20200807 commit code" />
     <MESSAGE value="20200812 commit code" />
     <MESSAGE value="20200813 commit code" />
-    <option name="LAST_COMMIT_MESSAGE" value="20200813 commit code" />
+    <MESSAGE value="20200816 find city list" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200816 find city list" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1132" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597202105712">
@@ -281,74 +284,69 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="-309" y="526" key="#xdebugger.XInspectDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1597201113077" />
-    <state width="1358" height="342" key="GridCell.Tab.0.bottom" timestamp="1597564628557">
+    <state x="376" y="226" key="CommitChangelistDialog2" timestamp="1597564722359">
+      <screen x="0" y="23" width="1920" height="1141" />
+    </state>
+    <state x="376" y="226" key="CommitChangelistDialog2/0.23.1920.1141@0.23.1920.1141" timestamp="1597564722359" />
+    <state width="1358" height="342" key="GridCell.Tab.0.bottom" timestamp="1597564938654">
       <screen x="0" y="23" width="1920" height="1141" />
     </state>
     <state width="1877" height="305" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597396638682" />
-    <state width="1358" height="342" key="GridCell.Tab.0.bottom/0.23.1920.1141@0.23.1920.1141" timestamp="1597564628557" />
-    <state width="1358" height="342" key="GridCell.Tab.0.center" timestamp="1597564628556">
+    <state width="1358" height="342" key="GridCell.Tab.0.bottom/0.23.1920.1141@0.23.1920.1141" timestamp="1597564938654" />
+    <state width="1358" height="342" key="GridCell.Tab.0.center" timestamp="1597564938653">
       <screen x="0" y="23" width="1920" height="1141" />
     </state>
     <state width="1877" height="305" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597396638682" />
-    <state width="1358" height="342" key="GridCell.Tab.0.center/0.23.1920.1141@0.23.1920.1141" timestamp="1597564628556" />
-    <state width="1358" height="342" key="GridCell.Tab.0.left" timestamp="1597564628556">
+    <state width="1358" height="342" key="GridCell.Tab.0.center/0.23.1920.1141@0.23.1920.1141" timestamp="1597564938653" />
+    <state width="1358" height="342" key="GridCell.Tab.0.left" timestamp="1597564938652">
       <screen x="0" y="23" width="1920" height="1141" />
     </state>
     <state width="1877" height="305" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597396638682" />
-    <state width="1358" height="342" key="GridCell.Tab.0.left/0.23.1920.1141@0.23.1920.1141" timestamp="1597564628556" />
-    <state width="1358" height="342" key="GridCell.Tab.0.right" timestamp="1597564628557">
+    <state width="1358" height="342" key="GridCell.Tab.0.left/0.23.1920.1141@0.23.1920.1141" timestamp="1597564938652" />
+    <state width="1358" height="342" key="GridCell.Tab.0.right" timestamp="1597564938653">
       <screen x="0" y="23" width="1920" height="1141" />
     </state>
     <state width="1877" height="305" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597396638682" />
-    <state width="1358" height="342" key="GridCell.Tab.0.right/0.23.1920.1141@0.23.1920.1141" timestamp="1597564628557" />
-    <state width="1358" height="342" key="GridCell.Tab.1.bottom" timestamp="1597564629473">
+    <state width="1358" height="342" key="GridCell.Tab.0.right/0.23.1920.1141@0.23.1920.1141" timestamp="1597564938653" />
+    <state width="1358" height="342" key="GridCell.Tab.1.bottom" timestamp="1597564938656">
       <screen x="0" y="23" width="1920" height="1141" />
     </state>
     <state width="1877" height="305" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597396638422" />
-    <state width="1358" height="342" key="GridCell.Tab.1.bottom/0.23.1920.1141@0.23.1920.1141" timestamp="1597564629473" />
-    <state width="1358" height="342" key="GridCell.Tab.1.center" timestamp="1597564629472">
+    <state width="1358" height="342" key="GridCell.Tab.1.bottom/0.23.1920.1141@0.23.1920.1141" timestamp="1597564938656" />
+    <state width="1358" height="342" key="GridCell.Tab.1.center" timestamp="1597564938655">
       <screen x="0" y="23" width="1920" height="1141" />
     </state>
     <state width="1877" height="305" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597396638422" />
-    <state width="1358" height="342" key="GridCell.Tab.1.center/0.23.1920.1141@0.23.1920.1141" timestamp="1597564629472" />
-    <state width="1358" height="342" key="GridCell.Tab.1.left" timestamp="1597564629472">
+    <state width="1358" height="342" key="GridCell.Tab.1.center/0.23.1920.1141@0.23.1920.1141" timestamp="1597564938655" />
+    <state width="1358" height="342" key="GridCell.Tab.1.left" timestamp="1597564938654">
       <screen x="0" y="23" width="1920" height="1141" />
     </state>
     <state width="1877" height="305" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597396638422" />
-    <state width="1358" height="342" key="GridCell.Tab.1.left/0.23.1920.1141@0.23.1920.1141" timestamp="1597564629472" />
-    <state width="1358" height="342" key="GridCell.Tab.1.right" timestamp="1597564629472">
+    <state width="1358" height="342" key="GridCell.Tab.1.left/0.23.1920.1141@0.23.1920.1141" timestamp="1597564938654" />
+    <state width="1358" height="342" key="GridCell.Tab.1.right" timestamp="1597564938655">
       <screen x="0" y="23" width="1920" height="1141" />
     </state>
     <state width="1877" height="305" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597396638422" />
-    <state width="1358" height="342" key="GridCell.Tab.1.right/0.23.1920.1141@0.23.1920.1141" timestamp="1597564629472" />
-    <state x="859" y="302" key="Vcs.Push.Dialog.v2" timestamp="1597288162982">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1358" height="342" key="GridCell.Tab.1.right/0.23.1920.1141@0.23.1920.1141" timestamp="1597564938655" />
+    <state x="859" y="351" key="Vcs.Push.Dialog.v2" timestamp="1597564724537">
+      <screen x="0" y="23" width="1920" height="1141" />
     </state>
     <state x="859" y="302" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1597288162982" />
+    <state x="859" y="351" key="Vcs.Push.Dialog.v2/0.23.1920.1141@0.23.1920.1141" timestamp="1597564724537" />
     <state x="893" y="311" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1596814645359" />
-    <state width="487" height="574" key="XDebugger.FullValuePopup" timestamp="1597564641746">
+    <state width="487" height="574" key="XDebugger.FullValuePopup" timestamp="1597570992194">
       <screen x="0" y="23" width="1920" height="1141" />
     </state>
     <state width="487" height="528" key="XDebugger.FullValuePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1597396592284" />
-    <state width="487" height="574" key="XDebugger.FullValuePopup/0.23.1920.1141@0.23.1920.1141" timestamp="1597564641746" />
+    <state width="487" height="574" key="XDebugger.FullValuePopup/0.23.1920.1141@0.23.1920.1141" timestamp="1597570992194" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tcmap_spider.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/demo.py</url>
           <line>4</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tcmap_spider.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -363,6 +361,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Spider$mofan_spider_bs4_css.coverage" NAME="mofan_spider_bs4_css Coverage Results" MODIFIED="1597201515745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mofan_tutorial" />
     <SUITE FILE_PATH="coverage/Spider$demo.coverage" NAME="demo Coverage Results" MODIFIED="1597381172675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Spider$tcmap_spider.coverage" NAME="tcmap_spider Coverage Results" MODIFIED="1597564628454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Spider$tcmap_spider.coverage" NAME="tcmap_spider Coverage Results" MODIFIED="1597564910067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
