@@ -5,11 +5,14 @@ import re
 # if has Chinese, apply decode()
 html = urlopen("http://www.tcmap.com.cn/zhejiangsheng/").read().decode('gbk')
 
-soup = BeautifulSoup(html, features='lxml')
+soup = BeautifulSoup(html, features='html.parser')
 
-city_table = soup.table
-city_table_list = city_table.find_all('strong')
-city_table_list_1 = city_table_list.find_all('a')
+city_table_tag = soup.select("table strong a")
+# city_table_strong = city_table_tag.find_all('strong')
+
+
+city_result = city_table_tag.select('a[class="blue"]')
+
 # city = soup.find('table').find_all('strong')
 # <strong><a href=/zhejiangsheng/hangzhou.html  class=blue>杭州市</a></strong></td>
 # city_table = soup.find_all('a',href = re.compile(".+qu\.html"))
