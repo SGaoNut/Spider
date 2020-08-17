@@ -7,8 +7,8 @@ import pandas as pd
 # if has Chinese, apply decode()
 
 def get_html(url):
-    html_text = urlopen(url).read().decode('gbk')
-    return html_text
+    html = urlopen(url).read().decode('gbk')
+    return html
 
 
 def get_city(html_text):
@@ -17,23 +17,20 @@ def get_city(html_text):
     for c in city_res:
         print(c.get_text())
 
-
-
-
-# def city(url):
-#     html = urlopen(url).read().decode('gbk')
-#     soup = BeautifulSoup(html, features='html.parser')
-#     city_res = soup.select("table strong a")
-#     for city_list in city_res:
-#         print(city_list.get_text())
-#         return city_res
+def get_sub_city(html_text):
+    soup = BeautifulSoup(html_text, features='html.parser')
+    soup = soup.table
+    sub_city_res = soup.select("td > a")
+    for sub_c in sub_city_res:
+        print(sub_c.get_text())
 
 
 if __name__ == '__main__':
-    # address = input("请输入你的地址：")
     base_url = 'http://www.tcmap.com.cn'
-    zhejiang_sub_url = '/zhejiang/'
+    zhejiang_sub_url = '/zhejiangsheng/'
     url = base_url + zhejiang_sub_url
     html_text = get_html(url)
     city_name = get_city(html_text)
+    sub_city_name = get_sub_city(html_text)
+    print(city_name)
 
