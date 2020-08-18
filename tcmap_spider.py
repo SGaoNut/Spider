@@ -13,9 +13,27 @@ def get_html(url):
 
 def get_city(html_text):
     soup = BeautifulSoup(html_text, features='html.parser')
-    city_res = soup.select("table strong a")
-    for c in city_res:
-        print(c.get_text())
+    # city_res = soup.select("table tr")
+    city_res_1 = soup.select('tr[bgcolor = "#f8f8f8"]')
+    city_res_2 = soup.select('tr[bgcolor = "#ffffff"]')
+    city_res = city_res_1 + city_res_2
+    city_table = []
+    for city_n in city_res:
+        city_n_1 = city_n.select('strong')
+        city_n_2 = city_n.select('td > a')
+        for city_sub_n in city_n_2:
+            # city_sub_n_1 = city_sub_n.select('td > a')
+            city_table.append(city_sub_n.string)
+            print(city_sub_n.string)
+        city_table.append(city_n_1[0].string)
+        print(city_n_1[0].string)
+    return city_table
+
+
+
+    # city_res_0 = city_res[0]
+    # for c in city_res:
+    #     print(c.get_text())
 
 def get_sub_city(html_text):
     soup = BeautifulSoup(html_text, features='html.parser')
@@ -31,6 +49,6 @@ if __name__ == '__main__':
     url = base_url + zhejiang_sub_url
     html_text = get_html(url)
     city_name = get_city(html_text)
-    sub_city_name = get_sub_city(html_text)
-    print(city_name)
+    # sub_city_name = get_sub_city(html_text)
+    # print(city_name)
 
