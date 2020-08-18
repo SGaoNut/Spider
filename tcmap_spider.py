@@ -17,17 +17,25 @@ def get_city(html_text):
     city_res_1 = soup.select('tr[bgcolor = "#f8f8f8"]')
     city_res_2 = soup.select('tr[bgcolor = "#ffffff"]')
     city_res = city_res_1 + city_res_2
-    city_table = []
+    # city_table = []
+    city_table = pd.DataFrame(columns=('city', 'sub_city'))
     for city_n in city_res:
         city_n_1 = city_n.select('strong')
         city_n_2 = city_n.select('td > a')
+        # city_table.append(city_n_1[0].string)
+        # city_table.loc[0] = city_n_1[0].string
         for city_sub_n in city_n_2:
-            # city_sub_n_1 = city_sub_n.select('td > a')
-            city_table.append(city_sub_n.string)
+            city_sub_n_1 = city_sub_n.select('td > a')
+            city_table['city'].append(city_n_1[0].string)
+            city_table['sub_city'].append(city_sub_n_1[0].string)
+            # city_table = city_table.append(pd.DataFrame(city_n_1[0].string)
             print(city_sub_n.string)
-        city_table.append(city_n_1[0].string)
+            print(city_n_1[0].string)
+        # city_table = city_table.append(pd.DataFrame(city_n_1[0].string)
         print(city_n_1[0].string)
     return city_table
+
+
 
 
 
