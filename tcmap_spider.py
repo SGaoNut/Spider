@@ -25,15 +25,15 @@ def get_city(html_text):
         # city_table.append(city_n_1[0].string)
         # city_table.loc[0] = city_n_1[0].string
         for city_sub_n in city_n_2:
-            city_sub_n_1 = city_sub_n.select('td > a')
+            # city_sub_n_1 = city_sub_n.select('td > a')
             print(city_n_1[0].string)
-            print(city_sub_n_1[0].string)
-            city_table.append({'city': city_n_1[0].string, 'sub_city': city_sub_n_1[0].string}, ignore_index=True)
+            print(city_sub_n.string)
+            city_table = city_table.append({'city': city_n_1[0].string, 'sub_city': city_sub_n.string}, ignore_index=True)
             # city_table['city'].append(city_n_1[0].string)
             # city_table['sub_city'].append(city_sub_n_1[0].string)
             # city_table = city_table.append(pd.DataFrame(city_n_1[0].string)
         # city_table = city_table.append(pd.DataFrame(city_n_1[0].string)
-        print(city_n_1[0].string)
+        # print(city_n_1[0].string)
     return city_table
 
 
@@ -58,6 +58,7 @@ if __name__ == '__main__':
     url = base_url + zhejiang_sub_url
     html_text = get_html(url)
     city_name = get_city(html_text)
+    print(city_name)
     # sub_city_name = get_sub_city(html_text)
     # print(city_name)
 
