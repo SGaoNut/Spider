@@ -23,6 +23,7 @@ def get_city(html_text):
             city_table = city_table.append(
                 {'city': city_n_1[0].string, 'sub_city': city_sub_n.string, 'sub_city_url': sub_city_url}
                 , ignore_index=True)
+            soup_street =
     return city_table
 
 
@@ -38,5 +39,6 @@ if __name__ == '__main__':
     html_text = get_html(url)
     city_name = get_city(html_text)
     for sub_city_url in city_name[['sub_city_url']]:
-        street_info = get_street(sub_city_url)
+        html_text = sub_city_url
+        street_info = get_street(html_text)
         print(street_info)
