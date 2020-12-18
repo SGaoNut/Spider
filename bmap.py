@@ -7,8 +7,9 @@ bmap_test_tz_ls_zs.csv
 """
 
 import sys
-import geo_coding
-import write_file
+from geo_file import geo_file
+# from geo_file import geo_coding as geo_coding
+# from geo_file import write_file as write_file
 
 if __name__ == '__main__':
     print("\n###### Analysis Start ######\n")
@@ -18,5 +19,5 @@ if __name__ == '__main__':
     targetFile = sys.argv[2]
     bmapAK = sys.argv[3]
 
-    geoCoder = geo_coding(sourceFile, bmapAK)
-    write_file(targetFile, geoCoder)
+    geoCoder = geo_file.geo_coding(sourceFile, bmapAK)
+    geo_file.write_file(targetFile, geoCoder)
